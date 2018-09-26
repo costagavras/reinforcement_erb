@@ -1,4 +1,14 @@
-<label for="email">email</label>
+<!-- Your goal is to turn these 12 lines of code into something much smaller using plain-old ERB. -->
+
+
+<% @arr_dry.each do |inputs| %>
+  <li><label for=<%=inputs%>><%=inputs%></label>
+        :
+        <input type="text" name=<%=inputs%> id=<%=inputs%> class="fancy_form" ></li>
+        <br>
+<%end %>
+
+<!-- <label for="email">email</label>
 <input type="text" name="email" id="email" class="fancy_form" >
 
 <label for="username">username</label>
@@ -14,4 +24,4 @@
 <input type="text" name="address" id="address" class="fancy_form" >
 
 <label for="alias">alias</label>
-<input type="text" name="alias" id="alias" class="fancy_form" >
+<input type="text" name="alias" id="alias" class="fancy_form" > -->
